@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* CSS for styling */
+        body {
+            background-image: url(image/denis.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #0000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        footer { 
+            background-color: #0000; 
+            color: #8e0000; 
+            padding: 10px; /* Adjusted padding */ 
+            text-align: center; 
+            position: fixed; 
+            width: 100%; 
+            bottom: 0; 
+            z-index: 1000; 
+        }
+        mark {
+            background-color: #0000;
+            color: white;
+        }
+        .audio-holder {
+            justify-content: center;
+            display: flex;
+        }
+        #myDIV {
+            width: 600px;
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Description</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="information.html">Information</a>
+    <a href="description.html">Description</a>
+    <a href="contacts.html">Contacts</a>
+</nav>
+
+<section id="description">
+    <h2>Description</h2>
+    <button onclick="myFunction()">Click for something to happen</button>
+    <div id="myDIV">
+        SURPRISE!!!
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDIV").style.fontSize = "35px";
+
+            document.getElementById("myDIV").style.color = "white";
+
+            document.getElementById("myDIV").style.backgroundColor = "black";
+
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <p>I am Jasius Dwight C. Virtudes i have a sister that is only 1 year younger and i have a loving family.
+		My family rarely argue each other on our home and my sister and I mess with each other doing random things.
+		What I like is peace and quiet and among other things.</p>
+		
+		<p>My favorite movies to watch are either Thriller or War movies example like <cite><strong>Extraction 2.</strong></cite>
+        I like road trips on other places with my family.<br>
+		I enjoy watching nature as we drive by places to places <small>(don't judge me)</small>.</p>
+		
+		<p>I like to play games on my phone to pass time if there is nothing to do <del>sometimes</del>.<br>
+		I help my mother around on the house so she can have rest.<br>
+		Even when my family fight we always made up of each other and other.</p>
+
+        <div class="audio-holder">
+            <audio controls autoplay>
+                <source src="audio/Forrest.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+</section>
+
+<footer>
+    <mark>Description</mark>
+</footer>
+
+</body>
+</html>
